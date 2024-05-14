@@ -182,7 +182,7 @@ a {
 /* event.html */
 
 .event-gallery {
-    padding: 30px 150px;
+    padding: 30px 100px;
 }
 
 .event-box {
@@ -264,5 +264,82 @@ a {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* ----------------------------------- */
+/* responsive */
+
+@media screen and (max-width: 480px) {
+    .header-info {
+        display: none;
+    }
+
+    .title {
+        font-size: 5.0rem;
+    }
+
+    .sub-title {
+        font-size: 2.0rem;
+    }
+
+    .section-title {
+        font-size: 3.0rem;
+    }
+
+    .section-text {
+        font-size: 3.0rem;
+    }
+
+    .date-txt {
+        font-size: 2.7rem;
+    }
+
+    .theme-txt {
+        font-size: 3.5rem;
+    }
+
+    .theme-description {
+        font-size: 2.5rem;
+    }
+
+    .footer {
+        padding: 10px 10%;
+    }
+
+    .footer-text {
+        font-size: 2.0rem;
+    }
+
+    .sns-icon {
+        width: 30px;
+    }
+
+    .event-box {
+        display: block;
+    }
+
+    .event-gallery {
+        padding: 30px 50px;
+    }
+
+    .event-txt-box {
+        width: 80%;
+    }
+
+    .event-sns-box {
+        width: 60%;
+    }
+
+    .event-date-txt {
+        font-size: 3.0rem;
+    }
+
+    .event-title {
+        font-size: 3.5rem;
+    }
+
+    .event-description {
+        font-size: 2.0rem;
     }
 }
