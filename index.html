@@ -8,26 +8,83 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXv
+    ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="splash">
+        <div id="splash_logo">
+            <img src="assets/images/logo.png" alt="" class="fadeUp">
+        </div>
+    </div>
+
     <section class="header">
         <div class="header-info">
-            <p class="site-name">Kimura Koya</p>
-            <p class="site-intro">I'm a creative coder / interactive engineer.</p>
+            <a class="site-name" href="index.html">#minacoding</a>
         </div>
         <div class="nav">
             <ul>
-                <li><a href="#">Top</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="index.html">top</a></li>
+                <li><a href="theme.html">theme</a></li>
+                <li><a href="event.html">event</a></li>
             </ul>
         </div>
     </section>
-    <section class="p5-canvas">
+
+    <section class="first-view">
         <div id="P5Canvas"></div>
+        <h1 class="title">#minacoding</h1>
+        <p class="sub-title">creativeCoding Event by HitaHita</p>
     </section>
+    <section class="welcome-event evebt-info">
+        <h2 class="section-title">Welcome to #minacoding !!</h2>
+        <p class="section-text">Welcome to #minacoding!
+        Let's make June a month where you can fully express your daily creativity and enjoy lots of creative coding!<br>
+        The name #minacoding is a coined word combining "minazuki" meaning June in Japanese and "mina" meaning everyone!<br>
+        I would be happy if this could be an opportunity to take a fresh look at the creative coding activities of various
+        people globally, across many countries!</p>
+    </section>
+    <section class="what-event evebt-info">
+        <h2 class="section-title">What is #minacoding?</h2>
+        <p class="section-text">#minacoding is a daily coding event with a daily theme of creative coding.<br>
+        it has been running since 2022 and will be in its third year in 2024.</p>
+    </section>
+    <section class="when-event evebt-info">
+        <h2 class="section-title">When is #minacoding?</h2>
+        <p class="section-text"><a href="theme.html">Themes</a> are given and carried out over a one-month period from 1 June to 30 June.<br>
+        However, there is no need to stick to this one month or order, and it is perfectly acceptable to work on the theme for
+        17 days on 1 June, even if the work is done after July.<br>
+        The important thing is that you, as you learn about the event, will be coding, so that a wide variety of work will come
+        to the event and creative coders will be able to interact with each other.</p>
+    </section>
+    <section class="how-event evebt-info">
+        <h2 class="section-title">How to join #minacoding?</h2>
+        <p class="section-text">The main feature of #minacoding is that it is very easy to participate.<br>
+        You create a piece of work with your favourite programming tool, p5.js, processing, shader, unity, touch designer, etc.,
+        based on the day's theme.<br>
+        Then post your work on social networks such as X or instagram with the hashtag #minacoding.<br>
+        This will help us to collect a lot of work on #minacoding.<br>
+        Please search for #minacoding and react to other creations to make it more exciting!</p>
+    </section>
+
+    <section class="footer">
+        <div class="txt-box">
+            <p class="footer-text">#minacoding</p>
+            <p class="footer-description">by HitaHita</p>
+        </div>
+        <div class="sns-box">
+            <a href="https://www.instagram.com/2024.hitahita/"><img class="sns-icon" src="assets/images/instagram-logo.png" alt=""></a>
+            <a href="https://twitter.com/2024_hitahita"><img class="sns-icon" src="assets/images/x-logo.png" alt=""></a>
+        </div>
+    </section>
+
 
     <!-- ----- script ----- -->
     <script src="js/sketch.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 </html>

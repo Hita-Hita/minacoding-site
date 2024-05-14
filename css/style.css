@@ -1,10 +1,11 @@
 /* var setting */
 :root {
-    --main-bg-color: #040404;
-    --main-text-color: #f5f5f5;
+    --main-bg-color: #f5f5f5;
+    --main-text-color: #040404;
     --sub-text-color: #c3c3c3;
     --footer-color: #232323;
     --content-url-color: #c7c7c7;
+    --accent-color: #1c6888;
 
     --work-content-size: 300px;
 }
@@ -13,6 +14,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Josefin Slab", serif;
 }
 
 html {
@@ -34,21 +36,13 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2.0rem;
+    padding: 2.0rem 4.0rem;
     color: var(--main-text-color);
     font-family: 'Athiti', sans-serif;
 }
 
 .site-name {
-    font-size: 4rem;
-}
-
-.site-intro {
-    font-size: 2.0rem;
-}
-
-.nav {
-    padding-top: 2.0rem;
+    font-size: 2.5rem;
 }
 
 .nav ul {
@@ -61,11 +55,214 @@ a {
 }
 
 .nav li a {
-    font-size: 3.0rem;
+    font-size: 2.5rem;
     color: var(--main-text-color);
+    padding-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+    color: var(--main-bg-color);
+    background-color: var(--accent-color)
 }
 
 /* p5-canvas */
-.p5-canvas {
+.first-view {
+    position: relative;
+}
+
+.title {
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10.0rem;
+    color: #040404;
+    padding: 5px 40px;
+}
+
+.sub-title {
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.0rem;
+    color: #040404;
+    padding: 5px 20px;
+}
+
+/* footer */
+.footer {
+    background: var(--main-text-color);
+    color: var(--sub-text-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15%;
+}
+
+.footer-text {
+    font-size: 2.5rem;
+    margin-bottom: 1.0rem;
+}
+
+.footer-description {
+    font-size: 2.0rem;
+}
+
+.sns-box{
+    display: flex;
+    align-items: center;
+}
+
+.sns-icon {
+    width: 40px;
+    margin: 0 20px;
+}
+
+/* ----------------------------------- */
+/* index.html */
+
+/* event-info */
+.evebt-info{
+    background: white;
+    color: var(--main-text-color);
+    padding: 7.0rem 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 4.0rem;
+    margin-bottom: 4.0rem;
+}
+
+.section-text {
+    font-size: 3.0rem;
+    margin-bottom: 2.0rem;
+    line-height: 5.0rem;
+}
+
+.section-text a {
+    color: var(--accent-color);
+    border-bottom: #1c6888 solid 1px;
+}
+
+/* ----------------------------------- */
+/* theme.html */
+
+.theme-gallery {
+    padding: 30px 8%;
+}
+
+.theme-box {
+    margin-bottom: 80px;
+}
+
+.date-txt{
+    font-size: 4.0rem;
+    margin-bottom: 2.0rem;
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
+    display: inline-block;
+    padding: 0 40px 0 10px;
+}
+
+.theme-txt {
+    font-size: 5.0rem;
+    margin-bottom: 2.0rem;
+}
+
+.theme-description{
+    font-size: 2.5rem;
+    margin-bottom: 2.0rem;
+}
+
+/* ----------------------------------- */
+/* event.html */
+
+.event-gallery {
+    padding: 30px 150px;
+}
+
+.event-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.event-date-txt {
+    font-size: 4.0rem;
+    margin-bottom: 2.0rem;
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    display: inline-block;
+    padding: 0 40px 0 10px;
+}
+
+.event-title {
+    font-size: 5.0rem;
+    margin-bottom: 2.0rem;
+}
+
+.event-description {
+    font-size: 2.5rem;
+    margin-bottom: 2.0rem;
+    line-height: 3.5rem;
+}
+
+.event-txt-box{
+    width: 60%;
+}
+
+.event-sns-box {
+    width: 30%;
+}
+
+/* ----------------------------------- */
+/* loading */
+
+/* Loading背景画面設定　*/
+#splash {
+    /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
     background: var(--main-bg-color);
+    text-align: center;
+    color: #fff;
+}
+
+/* Loading画像中央配置 */
+#splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定 */
+#splash_logo img {
+    width: 200px;
+}
+
+/* fadeUpをするアイコンの動き */
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

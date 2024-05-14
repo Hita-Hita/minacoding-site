@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#minacoding</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXv
+        ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="splash">
+        <div id="splash_logo">
+            <img src="assets/images/logo.png" alt="" class="fadeUp">
+        </div>
+    </div>
+
+    <section class="header">
+        <div class="header-info">
+            <a class="site-name" href="index.html">#minacoding</a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">top</a></li>
+                <li><a href="theme.html">theme</a></li>
+                <li><a href="event.html">event</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="first-view">
+        <div id="P5Canvas"></div>
+        <h1 class="title">#minacoding</h1>
+        <p class="sub-title">creativeCoding Event by HitaHita</p>
+    </section>
+    <section id="theme-gallery" class="theme-gallery">
+        <!-- 以下のテンプレートで, csvとjsから挿入 -->
+        <!-- <div class="theme-box">
+            <div class="date-txt">June 1</div>
+            <p class="theme-txt">With one of my recent favorite songs</p>
+            <p class="theme-description">With one of my recent favorite songs With one of my recent favorite songs</p>
+        </div> -->
+    </section>
+
+    <section class="footer">
+        <div class="txt-box">
+            <p class="footer-text">#minacoding</p>
+            <p class="footer-description">by HitaHita</p>
+        </div>
+        <div class="sns-box">
+            <a href="https://www.instagram.com/2024.hitahita/"><img class="sns-icon" src="assets/images/instagram-logo.png"
+                    alt=""></a>
+            <a href="https://twitter.com/2024_hitahita"><img class="sns-icon" src="assets/images/x-logo.png" alt=""></a>
+        </div>
+    </section>
+
+
+    <!-- ----- script ----- -->
+    <script src="js/sketch.js"></script>
+    <script src="js/theme-data-inserter.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/date-txt-color-chabge.js"></script>
+</body>
+
+</html>
