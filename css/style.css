@@ -14,7 +14,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Josefin Slab", "Zen Kaku Gothic New", serif;
+    font-family: "Josefin Slab", serif;
+}
+
+.ja {
+    font-family:"Zen Kaku Gothic New", serif;
 }
 
 html {
